@@ -1,0 +1,1230 @@
+@font-face {
+    font-family: 'clash display';
+    src: url(/FUENTES/ClashDisplay_Complete/OTF/ClashDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: 'airstrike2';
+    src: url(/FUENTES/airstrike/airstrikelaser.ttf);
+}
+
+@font-face {
+    font-family: 'airstrike3';
+    src: url(/FUENTES/airstrike/airstrikeb3d.ttf);
+}
+
+@font-face {
+    font-family: 'airstrike';
+    src: url(/FUENTES/airstrike/airstrike.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'airstrike', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Eslos .Navigation */
+.navigation {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 1.0rem 7.6rem;
+    position: fixed;
+    width: 75%;
+    left: 13%;
+    background-color: rgba(242, 241, 233, 0.2);
+}
+
+.open,
+.close {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #163040;
+    font-size: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-right: 1.4rem;
+    text-shadow: 1px 1px 0px #f1f2e9;
+}
+
+.btn-inscripcion a {
+    padding: 16px 18px 16px 19px;
+    background: #163040;
+    border-radius: 2.0rem;
+    text-decoration: none;
+    color: #f1f2e9;
+    margin-top: 3.0rem;
+    font-family: 'airstrike', sans-serif;
+    font-size: 15px;
+}
+
+.btn-inscripcion a:hover {
+    color: #163040;
+}
+
+.nav-social {
+    color: #163040;
+}
+
+.nav-social:hover {
+    color: #f2a341;
+}
+
+/* Estilos Banner */
+.banner-content {
+    position: relative;
+    width: 100vw;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.text-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* O el color que prefieras */
+    text-align: center;
+    flex-direction: column;
+}
+
+.text-banner h1 {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 96px;
+    margin-top: 3.0rem;
+    font-family: 'airstrike laser', sans-serif;
+}
+
+.text-banner h1:hover {
+    -webkit-text-stroke: .1px #f1f2e9;
+    color: transparent;
+    transition: .7s;
+}
+
+.text-banner p {
+    margin: 0 auto;
+    color: #f1f2e9;
+    font-size: 20px;
+    font-family: 'clash display', sans-serif;
+    margin-top: 2.0rem;
+}
+
+.text-banner a {
+    margin: 0 auto;
+    padding: 16px 18px 16px 19px;
+    background: #163040;
+    border-radius: 2.0rem;
+    text-decoration: none;
+    color: #f1f2e9;
+    margin-top: 3.0rem;
+    font-family: 'airstrike', sans-serif;
+    font-size: 20px;
+}
+
+.text-banner a:hover {
+    background: #f2a341;
+    color: #163040;
+}
+
+.navigation a:hover {
+    color: #f2a341;
+    transition: .3s;
+}
+
+.btn-explorar {
+    margin-top: 6.0rem;
+}
+
+/* Seccion de info */
+.info {
+    background: url(../IMG/BACKGROUND2SECTION.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9rem;
+}
+
+.info-h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'airstrike', sans-serif;
+    max-width: 106.6rem;
+    margin-top: 2.0rem;
+    color: #163040;
+}
+
+.info-contenido {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-parrafo {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'clash display', sans-serif;
+    max-width: 87.3rem;
+    margin-top: 5.0rem;
+    color: #163040;
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30.0rem;
+}
+
+.img-1 img:hover {
+    color: #f1f2e9;
+    background: #f1f2e9;
+    transition: .4s;
+}
+
+.img-2 img {
+    width: 143px;
+    height: 143px;
+    box-shadow: 12px 12px 12px rgb(22, 48, 64, .1);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.img-2 img:hover {
+    color: #f1f2e9;
+    background: #f1f2e9;
+}
+
+.img-2,
+.img-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-2 p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #163040;
+}
+
+.img-1 p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #163040;
+}
+
+/* SECCION DE FECHAS */
+.fechas {
+    width: 100vw;
+    height: auto;
+    background: url(/IMG/fechas1.png) center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding-bottom: 9rem;
+}
+
+.fechas-content {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.fecha-title {
+    font-size: 30px;
+    font-family: 'airstrike', sans-serif;
+    text-align: center;
+    padding-top: 9rem;
+}
+
+.fecha-title {
+    color: #f1f2e9;
+    font-size: 18px;
+    font-family: 'airstrike', sans-serif;
+    text-align: center;
+}
+
+.arrow-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15rem;
+    flex-direction: row;
+}
+
+.arrow-fechas {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.arrow-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 10.0rem;
+}
+
+.arrow-2 {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 10.0rem;
+}
+
+.arrow-1 {
+    font-size: 12rem;
+    color: #f1f2e9;
+}
+
+.arrow-1:hover {
+    color: #163040;
+}
+
+.arrow-2 {
+    font-size: 12rem;
+    color: #f1f2e9;
+    align-items: center;
+}
+
+.arrow-2:hover {
+    color: #163040;
+}
+
+.text-arrow {
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-sub {
+    max-width: 97.8rem;
+    margin-bottom: 0 auto;
+    line-height: 2.5rem;
+    font-size: 20px;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+.text-sub1 {
+    text-align: center;
+    max-width: 97.8rem;
+    margin-top: 0 auto;
+    line-height: 2.5rem;
+    font-size: 20px;
+    letter-spacing: .1rem;
+}
+
+/* FINAL SECCION DE FECHAS */
+
+/* INICIO SECCION DE CAMISA */
+.jersey {
+    background: #f1f2e9;
+    width: 100vw;
+    margin: 0 auto;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.text-jersey {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'airstrike', sans-serif;
+    padding-top: 9.0rem;
+    color: #163040;
+}
+
+.jersey-contenido {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20.0rem;
+}
+
+.jersey-contenido .atras {
+    margin-top: 7.0rem;
+}
+
+/* FINAL SECCION DE CAMISA */
+
+/* Seccion de premios */
+.premios-content {
+    background: linear-gradient(135deg, #b5bdc8 0%, #828c95 42%, #28343b 100%);
+    display: flex;
+    width: 100vw;
+    padding: 5.0rem 0;
+}
+
+.content-premios-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.image img {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    left: -15%;
+}
+
+.content-text {
+    max-width: 40.0rem;
+    margin-top: 10.0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    right: 10%;
+}
+
+.content-text h2 {
+    font-family: 'airstrike', sans-serif;
+    font-size: 30px;
+    color: #163040;
+    text-transform: uppercase;
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 20px;
+    font-family: 'clash display', sans-serif;
+    padding-top: 4.5rem;
+    color: #f1f2e9;
+}
+
+ul li strong {
+    font-size: 30px;
+    font-family: 'airstrike3', sans-serif;
+    margin: 1.2rem;
+    color: #163040;
+}
+
+p {
+    font-size: 20px;
+    padding-top: 6.5rem;
+    font-family: 'clash display', sans-serif;
+    color: #f1f2e9;
+}
+
+/* PAQUETE DE SUSCRIPCION */
+.paquete {
+    background: url(../IMG/BACKGROUND2SECTION.png) no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.text-suscripcion {
+    color: #163040;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    gap: 3.5rem 1.5rem;
+    padding-top: 6rem;
+    column-gap: .5rem;
+    place-items: center;
+}
+/* INICIO SECCION GALERIA DE FOTOS */
+.galeria{
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;        
+    background: #163040;
+    justify-content: center;
+}
+.content-galery{
+    display: flex;
+    grid-template-columns: repeat(2, .5fr);
+    width: 100%;
+    height: auto;
+    padding: 97px 122px;
+    justify-content: center;
+    gap: 20px 20px;
+}
+/* FINAL GALERIA DE FOTOS */
+/* INICIO SECCION MAPAS DE RUTA */
+.mapa-rutas {
+    width: 100vw;
+    height: auto;
+    background: url(/IMG/background-ruta.jpeg);
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 9rem;
+}
+
+.texto-rutas {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'airstrike', sans-serif;
+    color: #163040;
+    padding-top: 5.0rem 0;
+}
+
+.rutas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    margin: 0 auto;
+    gap: 4.0rem;
+}
+.mapa1{
+    width: 600px;
+    height: auto;
+}
+.mapa2{
+    width: 600px;
+    height: auto;
+}
+/* FINAL SECCION MAPAS DE RUTA */
+/* INICIO SECCION DE RESTAURANTES */
+.hoteles {
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background: #163040;
+    padding: 5.0rem 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 100px;
+}
+
+.card {
+    width: 325px;
+    background-color: #f1f2e9;
+    border-radius: 10PX;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #163040;
+    font-family: 'airstrike', sans-serif;
+}
+
+.card-content p {
+    font-size: 18px;
+    color: #163040;
+    margin-bottom: 20px;
+}
+
+.button-card {
+    display: inline-block;
+    background-color: #163040;
+    color: #f1f2e9;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.title-rest {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'airstrike', sans-serif;
+    color: #f1f2e9;
+    letter-spacing: 1px;
+}
+
+/* FINAL SECCION DE RESTAURANTES */
+/* INICIO SECCION DE PATROCINADORES */
+.patrocinadores {
+    width: 100vw;
+    height: auto;
+    background: #f1f2e9;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-patrocinadores h2{
+    color: #163040;
+    font-size: 3.0rem;
+    font-family: 'airstrike', sans-serif;
+    text-align: center;
+    padding-top: 3.5rem;
+}
+
+.imagenes-patrocinadores {
+    display: flow-root;
+    padding-top: 3.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin-bottom: 3.5rem;
+}
+.cope{
+    padding-top: 2.0rem;
+}
+/* FINAL SECCION DE PATROCINADORES */
+/* Incio slider patrocinadores */
+.slider {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-image: url(/IMG/background-patrocinadores.png);
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    -webkit-animation: scroll 15s linear infinite;
+    width: calc(220px *14);
+    align-items: center;
+}
+
+.slider .slide {
+    width: 175px;
+}
+
+.slider .slide img {
+    width: 100%;
+    padding: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        --webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        --webkit-transform: translateX(calc(-220px * 7));
+        transform: translateX(calc(-220px * 7));
+    }
+}
+
+/* Final slider patrocinadores */
+/* Incio formulario inscripciones */
+.container-ins {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/IMG/BACKGROUND2SECTION.png);
+    box-shadow: 7px 13px 37px #f2a341;
+    margin-top: 70px;
+    border-radius: 4px;
+    padding: 50px;
+    color: #f1f2e9;
+    height: 50vh;
+}
+
+.inscripciones {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'airstrike', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background: #163040;
+}
+
+.inscripciones h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #f1f2e9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #f2a341;
+    font-family: 'airstrike', sans-serif;
+    font-size: 16px;
+}
+
+.inscripciones p {
+    height: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 3rem;
+}
+
+.inscripciones a {
+    color: #f1f2e9;
+    text-decoration: none;
+}
+
+.inscripciones a:hover {
+    color: #f1f2e9;
+    text-decoration: underline;
+}
+
+.inscripciones .botons {
+    width: 100%;
+    background: #f1f2e9;
+    border: none;
+    padding: 12px;
+    color: #163040;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.botons:hover {
+    background: #f2a341;
+    color: #f1f2e9;
+}
+
+/* Final formulario de inscripciones */
+/* INICIO SECCION DE CONTACTO */
+.formulario {
+    display: flex;
+    justify-content: center;
+    background: url(/IMG/background-formulario.png) center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+}
+
+.container-c {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 200px;
+    width: 1000px;
+}
+
+.box-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box-info>h2 {
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 50px;
+    margin-top: 5rem;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.data>p {
+    font-size: 2rem;
+}
+
+.data>p i {
+    color: #f2a341;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: 'airstrike2', sans-serif;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links>a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #163040;
+    text-align: center;
+    transition: .1s;
+}
+
+.links>a>i {
+    color: #f2a341;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.input-box {
+    margin: 3rem;
+    padding-top: 2.5rem;
+    width: 100%;
+}
+
+.input-box>input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, .1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+}
+
+.input-box>textarea {
+    width: 100%;
+    height: 130px;
+    background: rgba(255, 255, 255, .1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+    padding: 10px;
+}
+
+.input-box>i {
+    color: rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+form>button {
+    background: #163040;
+    color: #f1f2e9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 10px;
+    transition: .2s;
+    align-items: center;
+    margin-left: 15rem;
+}
+
+form>button:hover {
+    background: #f2a341;
+}
+
+/* FINAL SECCION DE CONTACTO */
+/* INICIO SECCION FOOTER */
+.footer {
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/IMG/background-footer.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-color: #163040;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.text-footer a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'airstrike', sans-serif;
+    color: #f1f2e9;
+}
+
+.text-footer a:hover {
+    color: #f2a341;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3.5rem;
+    padding-top: 5rem;
+}
+
+.icon {
+    font-size: 30px;
+    color: #f1f2e9;
+    transition: .4s;
+}
+
+.icon:hover {
+    color: #f2a341;
+}
+
+.footer-copy {
+    font-size: 18px;
+    font-family: 'airstrike', sans-serif;
+    color: #f1f2e9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.logo-footer {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* FINAL SECCION FOOTER */
+
+/* INICIO MEDIUM DEVICES */
+@media screen and (max-width: 1280px) {
+
+    .open,
+    .close {
+        display: initial;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        gap: 3.0rem;
+        background-color: #f1f2e9;
+        width: 60%;
+        transition: .4s;
+        z-index: 1000;
+    }
+
+    .navigation {
+        width: 100%;
+        left: 0;
+        padding: 1.0rem 1.0rem;
+    }
+
+    .open {
+        color: #f2a341;
+        font-size: 3rem;
+        display: flex;
+        position: absolute;
+        right: 10%;
+    }
+
+    .close {
+        color: #f2a341;
+        font-size: 3rem;
+    }
+
+    .btn-inscripcion {
+        display: none;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+
+    .content-premios-container{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .image img{
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+        position: initial;
+        margin: 0 auto;
+    }
+
+    .content-text {
+        position: initial;
+    }
+
+    .rutas{
+        flex-wrap: wrap;
+    }
+
+    .mapa1{
+        width:500px ;
+        height: auto;
+    }
+    .mapa2{
+        width: 500px;
+        height: auto;
+    }
+    .card-container{
+        flex-wrap: wrap;
+    }
+
+    .formulario{
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        padding: 5.0rem 0;
+    }
+
+    .container-c{
+        flex-direction: column;
+        justify-content: center;
+        gap: initial;
+        width: 100%;
+        padding: initial;
+        text-align: center;
+    }
+
+    .box-info{
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .input-box {
+        width: 60%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #btn-ins {
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 2.5rem;
+    }
+
+    .box-info h2 {
+        max-width: 40.0rem;
+        text-align: center;
+    }
+}
+.content-galery{
+    flex-wrap: wrap;
+}
+/* FIN MEDIUM DEVICES */
+
+/* INICIO SMALL DEVICES */
+@media screen and (max-width: 800px) {
+
+    .open,
+    .close {
+        display: initial;
+    }
+
+    .logo {
+        max-width: 80%;
+    }
+    .navigation{
+        padding: 1.0rem 2.0rem;
+    }
+    .text-banner h1 {
+        font-size: 70px;
+    }
+
+    .text-banner p {
+        font-size: 18px;
+    }
+
+    .info-h2 {
+        font-size: 20px;
+        padding: 0 3.0rem;
+    }
+
+    .info-parrafo {
+        font-size: 18px;
+        padding: 0 3.0rem;
+    }
+
+    .jersey-contenido img {
+        max-width: 80%;
+    }
+
+    .content-text h2 {
+        font-size: 22px;
+    }
+
+    .content-text li {
+        font-size: 18px;
+    }
+
+    .content-text p {
+        font-size: 18px;
+    }
+
+    .galeria {
+        display: none;
+    }
+
+    .text-sub,
+    .text-sub1 {
+        display: none;
+    }
+
+    .arrow-right {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .fechas {
+        height: 100vh;
+    }
+
+    .arrow-2 {
+        padding-top: 9.0rem;
+    }
+
+    .text-footer {
+        display: none;
+    }
+
+    .img {
+        gap: 5.0rem
+    }
+
+    .jersey-contenido {
+        gap: 5.0rem;
+    }
+
+    .rutas img {
+        max-width: 98%;
+    }
+
+    .images img {
+        max-width: 70%;
+    }
+
+    .text-suscripcion {
+        font-size: 16px;
+    }
+
+    .image img {
+        width: 412px;
+        height: auto;
+    }
+}
+.imagenes-patrocinadores{
+    flex-wrap: wrap;
+    display: flex;
+}
+.texto-patrocinadores h2{
+    font-size: 18px;
+}
+.patrocinadores{
+    height: auto;
+}
+.container-ins{
+    max-width: 70%;
+}
+.box-info h2{
+    font-size: 35px;
+}
+/* FIN SMALL DEVICES */
